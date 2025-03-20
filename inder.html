@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script src="functions.js"></script>
+    <title>Sell back leave Calculator</title>
+</head>
+<body>
+    <form id="leaveCalculator">
+        <div class="formContainer">
+            <h2>Sell back leave Calculator</h2>
+            <div id="basicCalculator">
+                <p id="details">Enter the following details:</p>
+                <div>
+                    <label for="days-of-leave">Days of Leave:</label>
+                    <input type="text" id="days-of-leave" name="days-of-leave" placeholder="Enter days of leave">
+                </div>
+                <div>
+                    <label for="base-pay">Base Pay:</label>
+                    <input type="text" id="base-pay" name="base-pay" placeholder="Enter your base pay">
+                </div>
+                <div>
+                    <label for="sales-rate">Sale Rate:</label>
+                    <input type="text" id="sales-rate" name="sales-rate" placeholder="Will calculated automatically" readonly>
+                </div>
+                <div>
+                    <label for="leave-value">Leave Value:</label>
+                    <input type="text" id="leave-value" name="leave-value" placeholder="Will calculated automatically" readonly>
+                </div>
+                <div>
+                    <label for="tax-rate">Tax Rate (%):</label>
+                    <input type="text" id="tax-rate" name="tax-rate" placeholder="Enter tax rate if you know it">
+                </div>
+                <div>
+                    <label for="taxes-taken">Taxes Taken:</label>
+                    <input type="text" id="taxes-taken" name="taxes-taken" readonly>
+                </div>
+                <div>
+                    <label for="total">Total:</label>
+                    <input type="text" id="total" name="total" readonly>
+                </div>
+        </div>
+        <div class="buttonContainer">
+            <button id="calculateButton" type="button" onclick="calculateTotal()">Calculate Total</button>
+            <button id="resetButton" type="button" onclick="resetForm()">Reset</button>
+        </div>
+        </div>
+      </form>
+</body>
+</html>
